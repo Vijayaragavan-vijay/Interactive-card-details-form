@@ -21,3 +21,24 @@ Mobile-view:
 ![mobile_details](https://user-images.githubusercontent.com/95960286/190866137-abc4719b-5044-4727-b77a-4df64a8813bf.png)
 ![mobile_error](https://user-images.githubusercontent.com/95960286/190866139-c1abe758-4c04-4acf-b1d2-adce89a3b106.png)
 ![mobile_greetings](https://user-images.githubusercontent.com/95960286/190866143-84026a8b-f698-498f-b95f-2e6a9d1533bf.png)
+
+Note:
+
+In Live site, When we click the confirm button then validation takes place, when we double click the confirm button then it will move on to thankyou page.
+
+
+Live Site URL:https://beautiful-pie-8ebc98.netlify.app/
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+
+## Author
+
+- Frontend Mentor - [@Vijayaragavan](https://www.frontendmentor.io/profile/vijayaragavankts)
