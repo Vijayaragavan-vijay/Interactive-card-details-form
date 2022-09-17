@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Interactive card details form</title>
+    <style>
+        .attribution {
+            position: absolute;
+            top: 100%;
+            left: 8%;
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="left"></div>
+        <div id="right">
+            <div id="rightNew">
+                <form action="">
+                    <div>
+                        <label for="" id="username">Cardholder Name</label>
+                        <input type="text" id="username_enter" placeholder="e.g. Jane Appleseed">
+                        <p id="nameerr">error</p>
+                    </div>
+                    <div>
+                        <label for="" id="number">Card Number</label>
+                        <input type="text" id="cardnumber" placeholder="e.g. 1234 5678 9123 0000">
+                        <p id="numerr">error</p>
+                    </div>
+                    <span>
+                        <label for="" id="date">Exp. Date (MM/YY)</label>
+                        <input type="text" id="month" placeholder="MM">
+                        <p id="dateerr">error</p>
+                        </span>
+                    <span>
+                            <input type="text" id="year" placeholder="YY">
+                    </span>
+
+
+
+                    <span>
+                      <label for="" id="cvc">CVC</label>
+                      <input type="text" id="cvcid" placeholder="e.g. 123">
+                      <p id="cvcerr">error</p>
+                    </span>
+
+                    <button id="btn">Confirm</button>
+                </form>
+            </div>
+            <div id="thank">
+                <div>
+                    <img id="img" src="images/icon-complete.svg" alt="">
+                    <h3 id="h3">THANK YOU!</h3>
+                    <p id="greeting">We've added your card details</p>
+                    <button id="btn1">Continue</button>
+                </div>
+            </div>
+
+        </div>
+        <div id="cmnid">
+            <div class="circle-full"></div>
+            <div class="circle-outline"></div>
+            <h3 id="num">0000 0000 0000 0000</h3>
+            <p id="bottomleft">Jane Appleseed</p>
+            <p id="bottomright"> <span id="mon">00</span> / <span id="yr">00</span> </p>
+        </div>
+        <div id="card-back">
+            <p id="threedigit">000</p>
+        </div>
+    </div>
+
+
+
+    <div class="attribution">
+        <!-- Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/vijayaragavankts">Vijayaragavan</a>. -->
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
