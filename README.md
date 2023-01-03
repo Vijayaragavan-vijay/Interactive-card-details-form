@@ -27,7 +27,7 @@ Note:
 In Live site, When we click the confirm button then validation takes place, when we double click the confirm button then it will move on to thankyou page.
 
 
-Live Site URL:https://beautiful-pie-8ebc98.netlify.app/
+Live Site URL:https://interactive-card-details-vj.netlify.app/
 
 ## My process
 
