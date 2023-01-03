@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    /* min-height: 100vh; */
+    font-size: var(--size);
+    /* overflow: hidden; */
+    position: relative;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --lviolet: hsl(270, 3%, 87%);
+    --dviolet: hsl(279, 6%, 55%);
+    --vdviolet: hsl(278, 68%, 11%);
+    --size: 18px;
+    --rederror: hsl(0, 100%, 66%);
+}
+
+#container {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    position: relative;
+}
+
+#container #left {
+    width: 30%;
+    background-image: url(images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+}
+
+#container #right {
+    position: relative;
+    width: 70%;
+    background-color: var(--white);
+    margin-left: px;
+    top: 240px;
+}
+
+#cmnid {
+    width: 450px !important;
+    height: 240px;
+    background-image: url(images/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    /* position: relative; */
+    top: 85px;
+    left: 150px;
+    border-radius: 20px;
+}
+
+#cmnid .circle-full {
+    position: inherit;
+    top: 10%;
+    left: 25px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-color: var(--white);
+}
+
+#cmnid .circle-outline {
+    position: inherit;
+    top: 15%;
+    left: 20%;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--white);
+}
+
+#cmnid #num {
+    color: var(--white);
+    position: inherit;
+    margin-left: 30px;
+    top: 55%;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+#cmnid #bottomleft {
+    text-transform: uppercase;
+    color: var(--white);
+    position: inherit;
+    bottom: 20px;
+    letter-spacing: 2px;
+    margin-left: 30px;
+}
+
+#cmnid #bottomright {
+    color: var(--white);
+    position: inherit;
+    bottom: 20px;
+    right: 10%
+}
+
+#card-back {
+    width: 450px;
+    height: 240px;
+    background-image: url(images/bg-card-back.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 20px;
+    top: 360px;
+    left: 220px
+}
+
+#threedigit {
+    position: inherit;
+    top: 46%;
+    right: 60px;
+    color: var(--white);
+    letter-spacing: 2px;
+}
+
+#right #username,
+#right #number,
+#right #date,
+#right #cvc {
+    position: absolute;
+    left: 35%;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#right #username {
+    top: -6%;
+}
+
+#right #username_enter,
+#right #cardnumber {
+    position: absolute;
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--lviolet);
+    width: 340px;
+    height: 35px;
+    left: 35%;
+    font: 18px;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+}
+
+#right #username_enter {
+    top: -2%;
+}
+
+#right #username_enter:focus,
+#right #cardnumber:focus,
+#right #month:focus,
+#right #year:focus,
+#right #cvcid:focus {
+    border: 1px solid hsl(278, 94%, 30%);
+}
+
+#nameerr,
+#numerr,
+#cvcerr,
+#dateerr {
+    visibility: hidden;
+    color: red;
+    position: absolute;
+    font-size: 16px;
+}
+
+#nameerr {
+    left: 35%;
+    top: 2%;
+}
+
+#right #number {
+    top: 6%;
+}
+
+#numerr {
+    left: 35%;
+    top: 14%;
+}
+
+#right #cardnumber {
+    top: 10%;
+}
+
+#dateerr {
+    left: 35%;
+    top: 26%;
+}
+
+#right #date {
+    top: 18%;
+}
+
+#right #month,
+#right #year {
+    position: absolute;
+    padding: 10px;
+    width: 70px;
+    height: 35px;
+    outline: none;
+    left: 35%;
+    font: 18px;
+    padding-left: 15px;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    border: 1px solid var(--lviolet);
+}
+
+#right #month {
+    top: 22%;
+}
+
+#right #year {
+    left: 43%;
+    top: 22%;
+}
+
+#right #cvc {
+    left: 60%;
+    top: 18%;
+}
+
+#cvcerr {
+    left: 55%;
+    top: 26%;
+}
+
+#right #cvcid {
+    width: 170px;
+    position: absolute;
+    padding: 10px;
+    top: 22%;
+    height: 35px;
+    outline: none;
+    left: 54%;
+    font: 18px;
+    padding-left: 15px;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    border: 1px solid var(--lviolet);
+}
+
+.attribution {
+    display: none;
+}
+
+::placeholder {
+    color: var(--lviolet);
+}
+
+#btn {
+    position: absolute;
+    left: 35%;
+    width: 350px;
+    height: 50px;
+    color: var(--white);
+    background-color: var(--vdviolet);
+    border-radius: 10px;
+    top: 30%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#rightNew {
+    /* display: none; */
+}
+
+#thank {
+    display: none;
+}
+
+#thank #img {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+}
+
+#thank #h3 {
+    position: absolute;
+    top: 15%;
+    left: 47%;
+    font-weight: normal;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+#thank #greeting {
+    position: absolute;
+    top: 20%;
+    left: 42%;
+    font-weight: normal;
+    color: var(--dviolet);
+}
+
+#btn1 {
+    position: absolute;
+    left: 35%;
+    width: 380px;
+    height: 50px;
+    color: var(--white);
+    background-color: var(--vdviolet);
+    border-radius: 10px;
+    top: 27%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+@media screen and (max-width:385px) {
+    body {
+        width: 100%;
+        min-height: 100vh;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-flow: column;
+        flex-direction: column;
+    }
+    #container #left {
+        background-image: url(images/bg-main-mobile.png);
+        background-size: auto;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 240px;
+    }
+    #card-back {
+        width: 280px;
+        top: 3%;
+        background-size: cover;
+        border-radius: 10px;
+        left: 20%;
+        z-index: 2;
+        height: 155px;
+    }
+    #threedigit {
+        top: 43%;
+        right: 13%;
+        font-size: 14px;
+    }
+    #cmnid {
+        top: 12%;
+        background-size: cover;
+        z-index: 10;
+        left: 5%;
+        border-radius: 8px;
+        height: 155px;
+        width: 280px;
+    }
+    #cmnid .circle-full {
+        height: 25px;
+        width: 25px;
+    }
+    #cmnid .circle-outline {
+        height: 12px;
+        width: 12px;
+    }
+    #cmnid #num {
+        font-size: 12px;
+    }
+    #cmnid #bottomleft,
+    #cmnid #bottomright {
+        font-size: 10px;
+    }
+    #cmnid #bottomright {
+        right: 20px
+    }
+    #right {
+        /* display: none; */
+        margin-top: 0;
+        width: 100%;
+        font-size: 16px;
+        display: block;
+    }
+    #right #username {
+        top: 8%;
+        left: 7%;
+        font-size: 13px;
+    }
+    #right #username_enter {
+        top: 10%;
+        left: 7%;
+        width: 320px;
+        height: 40px;
+    }
+    #right #number {
+        left: 7%;
+        font-size: 13px;
+        top: 17%;
+    }
+    #right #cardnumber {
+        top: 19%;
+        left: 7%;
+        width: 320px;
+        height: 40px;
+    }
+    #nameerr {
+        top: 14%;
+        font-size: 12px;
+        left: 8%;
+    }
+    #numerr {
+        top: 23%;
+        font-size: 12px;
+        width: 100%;
+        left: 10%;
+    }
+    #right #date {
+        top: 25%;
+        left: 10%;
+        font-size: 13px;
+    }
+    #right #cvc {
+        top: 25%;
+        left: 85%;
+        font-size: 13px;
+    }
+    #right #month {
+        width: 65px;
+        height: 40px;
+        left: 10%;
+        top: 28%;
+    }
+    #right #year {
+        width: 65px;
+        height: 40px;
+        top: 28%;
+    }
+    #right #cvcid {
+        width: 160px;
+        height: 40px;
+        left: 73%;
+        top: 28%;
+    }
+    #dateerr {
+        left: 10%;
+        font-size: 12px;
+        width: 100%;
+        top: 32%;
+    }
+    #cvcerr {
+        left: 70%;
+        font-size: 12px;
+        width: 100%;
+        top: 32%;
+    }
+    #btn {
+        width: 310px;
+        left: 10%;
+        top: 34%;
+    }
+    .attribution {
+        display: block;
+    }
+    /* thanking page */
+    #thank #img {
+        height: 75px;
+        width: 75px;
+        top: 10%;
+        left: 55%;
+    }
+    #thank #h3 {
+        top: 20%;
+        width: 100%;
+        font-weight: 500;
+        font-size: 20px;
+        left: 23%;
+    }
+    #thank #greeting {
+        top: 25%;
+        width: 100%;
+        font-weight: bolder;
+        left: 30%;
+    }
+    #btn1 {
+        left: 10%;
+        width: 320px;
+        top: 35%;
+    }
+}
